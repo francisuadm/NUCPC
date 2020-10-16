@@ -110,8 +110,8 @@ Sample command for capturing Video and Audio with Logitech Rally Plus System
 ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
 
 
-##Manually update MTR apps via Powershell command
- 
+## Manually update MTR apps via Powershell command
+
 [https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations](See section (Software updates) via Powershell)
  
 Note the trick is to download the [https://go.microsoft.com/fwlink/?linkid=851168](updated MSI) from the endpoint itself, while logged in with admin.
