@@ -34,38 +34,32 @@ winrs -r:IP Address or Computername -u:Computername\admin -p:password cmd or pow
 
 Commands in the elevated command prompt:
 netsh advfirewall firewall add rule name="ICMP allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
-​
+
 This command will stop windows update
 net stop wuauserv
 net stop bits
 net stop dosvc
 sc config wuauserv start=disabled
-​
+
 If you want to re-enable the Windows updates at any later time, then give these commands in the elevated command prompt:
 sc config wuauserv start=auto
 sc start wuauserv
 net start wuauserv
 net start bits
 net start dosvc
-​
+
 Schedule automatic restart
 schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
-​
+
 shutdown /t 0 /r /f
-​
-​
-​
+
 FFMPEG command
-​
-​
 Logitech Rally System
 ffmpeg -f dshow -i video="Logi Rally Camera":audio="Echo Cancelling Speakerphone (3- Logi Rally Audio)" LRally.mp4
-​
-​
+
 Logitech Meetup System
 ffmpeg -f dshow -i video="Logitech MeetUp":audio="Echo Cancelling Speakerphone (Logitech MeetUp Speakerphone)" LMeetup.mp4
-​
-​
+
 TRS.BAT
 @echo off
 rem net use x: \\fileserver\Sharefolder /user:domain\username password-here
@@ -79,22 +73,22 @@ ffmpeg -list_devices true -f dshow -i dummy
 Rem  the command below will only record meetup camera without audio.
 ffmpeg -f dshow -i video="Logitech MeetUp" meetupcam.mp4
 Rem this will only record video without audio.  => ffmpeg -f dshow -i video="Logi Rally Camera" Rallycam.mp4
-copy webcam.mp4 x:\it\uly
-​
+copy webcam.mp4 x:\it\filename
+
  
 Sample command for capturing Video and Audio with Logitech Rally Plus System
-​
+
                                [ Using Logitech Rally       ]                     [Using Logitech Rally Plus Microphones                             ]  Filename 4 output         
 ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
-​
-​
+
+
 Manually update MTR apps via Powershell command
  
 See section (Software updates) via Powershell
 https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations
  
 Note the trick is to download the updated MSI from the endpoint itself, while logged in with admin.
-​
+
 After you download the latest MSI install it, leave it as default location for installation folder. (Microsoft Teams Room App v4.5.35.0)
 Once installation is complete then create new share, follow the instruction below
     Open Explorer in C:\Program Files (x86)
@@ -102,27 +96,25 @@ Once installation is complete then create new share, follow the instruction belo
     Click Share this folder, in Share name: called it MTR, click permissions, check allow for Full control, change and read. Click Apply, ok, apply.
 Now right click windows logo in the lower left corner, select Windows Powershell(admin).
 In the Powershell Window Terminal, create new map to x by using net use example below
-​
+
 Just copy and paste the command below to your powershell window
  
 copy and paste the command, then press enter to execute it.
  
-Net use x: \\localhost\mtr 
-​
+Net use x: \\localhost\mtr
+
 Now let’s do the update by copying the command below and pasting it to your powershell window
  
 copy and paste the command, then press enter to execute it.
-​
+
 Add-AppxPackage  -ForceApplicationShutdown -Path 'x:\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem 'x:\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
  
 
 Once it’s complete reboot the MTR system, it will reboot twice 
 That’s it, you done.
-​
-​
-​
+
 Logitech Recommended NUC updates process.
-​
+
 There are a few primary things that need to be done to alleviate this situation but I am going to provide you the recommended list of NUC updates that are recommended to minimize Teams related system issues.
 
 Recommended NUC updates process
