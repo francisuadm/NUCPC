@@ -166,9 +166,11 @@ To boot into Windows connect a Keyboard to the NUC then reboot it while it is co
 ###### B. Install the intel driver and support assistant (Intel DSA) in the Windows Admin account and run the Intel Device Driver Assistant to ensure that the NUC is running the most updated versions of all required drivers.
 
 Link - <a href="https://www.intel.com/content/www/us/en/support/detect.html"> Intel Support Assistant</a>
+
 `
-###### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a>
-`
+###### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a> `
+
+
 ````
 Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
 ````
