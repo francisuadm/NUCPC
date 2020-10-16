@@ -46,8 +46,8 @@ Enable Remote Desktop
 
 Execute this command in NUC PC
 
-Commands in the elevated Powershell:
-
+##### Commands in the elevated Powershell:
+```
 Enable-PSRemoting -SkipNetworkProfileCheck -Force
 Set-Item WSMan:\localhost\Client\TrustedHosts * -Force
 Restart-Service WinRM
@@ -62,22 +62,26 @@ winrs -r:IP Address or Computername -u:Computername\admin -p:password cmd or pow
 
 Commands in the elevated command prompt:
 netsh advfirewall firewall add rule name="ICMP allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
-
-This command will stop windows update
+```
+##### This command will stop windows update
+```
 net stop wuauserv
 net stop bits
 net stop dosvc
 sc config wuauserv start=disabled
+```
 
-If you want to re-enable the Windows updates at any later time, then give these commands in the elevated command prompt:
+###### If you want to re-enable the Windows updates at any later time, then give these commands in the elevated command prompt:
+```
 sc config wuauserv start=auto
 sc start wuauserv
 net start wuauserv
 net start bits
 net start dosvc
+```
+###### Schedule automatic restart
+~~~schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
 
-Schedule automatic restart
-schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
 ``
 shutdown /t 0 /r /f
 ``
