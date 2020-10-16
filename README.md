@@ -2,7 +2,7 @@
 
 ## Here's the step by step instructions
 
-Brand new unit, let it reboot a few times once it's complete.
+### Brand new unit, let it reboot a few times once it's complete.
 
 You'll be prompted with setup wizard.
 
