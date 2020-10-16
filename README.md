@@ -165,7 +165,7 @@ https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NU
 
 Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
 
-D. Update the Displaylink device drivers https://www.displaylink.com/downloads/windows then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
+D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
 E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">Click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
 
