@@ -38,9 +38,9 @@ Select Account make sure you have the correct account and password.
 Under "Supported meeting mode" make sure its set to "Microsoft Teams (default)"
 then click Save and exit.
 
-[Install Logitech Sync](https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe):
+[Install Logitech Sync](https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe)
 
-[Install VNC Viewer](https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi):
+[Install VNC Viewer](https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi)
 
 Enable Remote Desktop
 
@@ -110,11 +110,11 @@ Sample command for capturing Video and Audio with Logitech Rally Plus System
 ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
 
 
-Manually update MTR apps via Powershell command
+##Manually update MTR apps via Powershell command
  
-<a href="https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations">See section (Software updates) via Powershell</a>
+[https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations](See section (Software updates) via Powershell)
  
-Note the trick is to download the <a href="https://go.microsoft.com/fwlink/?linkid=851168">updated MSI</a> from the endpoint itself, while logged in with admin.
+Note the trick is to download the [https://go.microsoft.com/fwlink/?linkid=851168](updated MSI) from the endpoint itself, while logged in with admin.
 
 After you download the latest MSI install it, leave it as default location for installation folder. (Microsoft Teams Room App v4.5.35.0)
 Once installation is complete then create new share, follow the instruction below
