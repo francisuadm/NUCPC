@@ -34,30 +34,15 @@ Enter the new PC name and follow the prompt but don't reboot yet, leave the wind
 
 Update the Time/Date and Timezone, and use the NTP Server 172.17.32.253 or 132.189.40.119
 
-
-
-
-
-
-
 Select Account make sure you have the correct account and password.
 Under "Supported meeting mode" make sure its set to "Microsoft Teams (default)"
 then click Save and exit.
 
-
-
-
-
-PC Name – SiteCodeTRSRoomName
-Make sure you the Time/Date correct and Timezone is updated
-Change NTP Server - 
- 
 Install Logitech Sync – Link
 
 Install VNC Viewer
 
 Enable Remote Desktop
-
 
 Execute this command in NUC PC
 
