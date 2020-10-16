@@ -168,9 +168,9 @@ To boot into Windows connect a Keyboard to the NUC then reboot it while it is co
 Link - <a href="https://www.intel.com/content/www/us/en/support/detect.html"> Intel Support Assistant</a>
 
 ###### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a>
-``
+`
 Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
-``
+`
 ###### D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
 ###### E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
