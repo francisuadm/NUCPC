@@ -190,4 +190,5 @@ choose Start a program , and press Next in the Program/script field type shutdow
 And that's all, you can press Finish
 ```
 
-[Note]
+{Note}
+
