@@ -1,9 +1,13 @@
 # NUCPC
 
 Here's the step by step instructions
+
 Brand new unit, let it reboot a few times once it's complete.
+
 You'll be prompted with setup wizard.
+
 For the initial setup you'll need the account info and password.
+
 Once you enter the account info the unit will reboot.
 After reboot, go ahead click on More. Do worry about any error you see.
 We still need to configure the unit. Now click on Settings.
