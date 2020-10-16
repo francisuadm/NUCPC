@@ -167,7 +167,7 @@ Note - Please ensure ALL instructions for followed when updating the HDMI driver
 
 D. Update the Displaylink device drivers https://www.displaylink.com/downloads/windows then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
-E: Update the Intel NUC BIOS: [https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH]
+E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">Click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
 
 F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
 
