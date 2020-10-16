@@ -111,11 +111,11 @@ ffmpeg -f dshow -i video="Logitech MeetUp" meetupcam.mp4
 Rem this will only record video without audio.  => ffmpeg -f dshow -i video="Logi Rally Camera" Rallycam.mp4
 copy webcam.mp4 x:\it\filename
 ```
-` 
-Sample command for capturing Video and Audio with Logitech Rally Plus System
-`
-                         [ Using Logitech Rally ]               [ Using Logitech Rally Plus Microphones ]  Filename 4 output         
-ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
+ 
+###### Sample command for capturing Video and Audio with Logitech Rally Plus System
+
+                   [ Using Logitech Rally ]               [ Using Logitech Rally Plus Microphones ]  Filename 4 output         
+`ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4`
 
 
 ### Manually update MTR apps via Powershell command
