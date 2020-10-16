@@ -165,14 +165,15 @@ Note - Please ensure ALL instructions for followed when updating the HDMI driver
 #### E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
 
 #### F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
-
-##### Press WinKey+R > type taskschd.msc and press Enter (it will launch Task Scheduler)
-##### Left click from the right pane on the Task Scheduler Library > open Action from the top menu > New Folder... > name it MyTasks > click OK
-##### Left click on the MyTasks > choose Action from menu > Create Basic Task... (it will open task wizard)
-##### You can enter the Name , for example "Restart", and press Next
-##### In Trigger section you can specify when you want to run your task, for example:
-##### Select Daily , and press Next
-##### Now you can specify the day, the hour and set to recur every day, after that press Next
-##### In Action section you can choose what you want to run, for example restart your system, to do this:
-##### choose Start a program , and press Next in the Program/script field type shutdown /r , and press Next
-##### And that's all, you can press Finish
+```
+Press WinKey+R > type taskschd.msc and press Enter (it will launch Task Scheduler)
+Left click from the right pane on the Task Scheduler Library > open Action from the top menu > New Folder... > name it MyTasks > click OK
+Left click on the MyTasks > choose Action from menu > Create Basic Task... (it will open task wizard)
+You can enter the Name , for example "Restart", and press Next
+In Trigger section you can specify when you want to run your task, for example:
+Select Daily , and press Next
+Now you can specify the day, the hour and set to recur every day, after that press Next
+In Action section you can choose what you want to run, for example restart your system, to do this:
+choose Start a program , and press Next in the Program/script field type shutdown /r , and press Next
+And that's all, you can press Finish
+```
