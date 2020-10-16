@@ -40,7 +40,7 @@ then click Save and exit.
 
 Install Logitech Sync – <a href="https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe">click HERE to download</a>
 
-Install VNC Viewer - <a href="https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi">Click HERE to download.</a> 
+Install VNC Viewer - <a href="https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi">click HERE to download.</a> 
 
 Enable Remote Desktop
 
@@ -106,14 +106,13 @@ copy webcam.mp4 x:\it\filename
  
 Sample command for capturing Video and Audio with Logitech Rally Plus System
 
-                               [ Using Logitech Rally       ]                     [Using Logitech Rally Plus Microphones                             ]  Filename 4 output         
+                         [ Using Logitech Rally ]               [ Using Logitech Rally Plus Microphones ]  Filename 4 output         
 ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
 
 
 Manually update MTR apps via Powershell command
  
-See section (Software updates) via Powershell
-https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations
+<a href="https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations">See section (Software updates) via Powershell</a>
  
 Note the trick is to download the <a href="https://go.microsoft.com/fwlink/?linkid=851168">updated MSI</a> from the endpoint itself, while logged in with admin.
 
@@ -165,7 +164,7 @@ Note - Please ensure ALL instructions for followed when updating the HDMI driver
 
 D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
-E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">Click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
+E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
 
 F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
 
