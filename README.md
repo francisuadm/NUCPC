@@ -4,21 +4,22 @@ NUC PC
 ​
  
 PC Name – SiteCodeTRSRoomName
-​
+
+
 Make sure you the Time/Date correct and Timezone is updated
 Change NTP Server - 172.17.32.253 or 132.189.40.119
  
 Install Logitech Sync – Link
-​
+
 Install VNC Viewer
-​
+
 Enable Remote Desktop
-​
-​
+
+
 Execute this command in NUC PC
-​
+
 Commands in the elevated Powershell:
-​
+
 Enable-PSRemoting -SkipNetworkProfileCheck -Force
 Set-Item WSMan:\localhost\Client\TrustedHosts * -Force
 Restart-Service WinRM
@@ -26,12 +27,11 @@ Get-Item WSMan:\localhost\Client\TrustedHosts
  
 Get-NetConnectionProfile | Set-NetConnectionProfile -NetworkCategory Private
 Set-NetFirewallProfile -Profile Private -Enabled False
-​
-​
-​
+
+
 Test-WSMan {enter ComputerName or IP Address}
 winrs -r:IP Address or Computername -u:Computername\admin -p:password cmd or powershell
-​
+
 Commands in the elevated command prompt:
 netsh advfirewall firewall add rule name="ICMP allow incoming V4 echo request" protocol=icmpv4:8,any dir=in action=allow
 ​
