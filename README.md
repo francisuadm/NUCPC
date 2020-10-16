@@ -38,9 +38,9 @@ Select Account make sure you have the correct account and password.
 Under "Supported meeting mode" make sure its set to "Microsoft Teams (default)"
 then click Save and exit.
 
-[Install Logitech Sync] (https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe)
+[Install Logitech Sync](https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe):
 
-[Install VNC Viewer] (https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi)
+[Install VNC Viewer](https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi):
 
 Enable Remote Desktop
 
