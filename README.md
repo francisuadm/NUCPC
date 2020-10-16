@@ -77,22 +77,25 @@ net start dosvc
 
 Schedule automatic restart
 schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
-
+``
 shutdown /t 0 /r /f
-
+``
 FFMPEG command
 Logitech Rally System
+````
 ffmpeg -f dshow -i video="Logi Rally Camera":audio="Echo Cancelling Speakerphone (3- Logi Rally Audio)" LRally.mp4
-
+````
 Logitech Meetup System
+```
 ffmpeg -f dshow -i video="Logitech MeetUp":audio="Echo Cancelling Speakerphone (Logitech MeetUp Speakerphone)" LMeetup.mp4
-
+```
 TRS.BAT
 @echo off
 rem net use x: \\fileserver\Sharefolder /user:domain\username password-here
 c:
 mkdir c:\ffmpeg
 cd\ffmpeg
+```
 curl https://ffmpeg.zeranoe.com/builds/win64/static/ffmpeg-20200324-e5d25d1-win64-static.zip -O ffmpeg
 powershell expand-archive -path "c:\ffmpeg\ffmpeg-20200324-e5d25d1-win64-static.zip" -DestinationPath c:\ffmpeg\
 copy c:\ffmpeg\ffmpeg-20200324-e5d25d1-win64-static\bin\*.* c:\ffmpeg\
@@ -101,10 +104,10 @@ Rem  the command below will only record meetup camera without audio.
 ffmpeg -f dshow -i video="Logitech MeetUp" meetupcam.mp4
 Rem this will only record video without audio.  => ffmpeg -f dshow -i video="Logi Rally Camera" Rallycam.mp4
 copy webcam.mp4 x:\it\filename
-
- 
+```
+` 
 Sample command for capturing Video and Audio with Logitech Rally Plus System
-
+`
                          [ Using Logitech Rally ]               [ Using Logitech Rally Plus Microphones ]  Filename 4 output         
 ffmpeg -f dshow -i video="Logi Rally Camera" -f dshow -i audio="Echo Cancelling Speakerphone (Logi Rally Audio)" output.mp4
 
@@ -116,24 +119,26 @@ Note the trick is to download the [updated MSI](https://go.microsoft.com/fwlink/
 
 After you download the latest MSI install it, leave it as default location for installation folder. (Microsoft Teams Room App v4.5.35.0)
 Once installation is complete then create new share, follow the instruction below
-    Open Explorer in C:\Program Files (x86)
-    Now select and right click on “Skype Room System Deployment Kit” folder, select properties, click tab Sharing, click Advanced Sharing.
-    Click Share this folder, in Share name: called it MTR, click permissions, check allow for Full control, change and read. Click Apply, ok, apply.
+```
+Open Explorer in C:\Program Files (x86)
+Now select and right click on “Skype Room System Deployment Kit” folder, select properties, click tab Sharing, click Advanced Sharing.
+Click Share this folder, in Share name: called it MTR, click permissions, check allow for Full control, change and read. Click Apply, ok, apply.
+```
 Now right click windows logo in the lower left corner, select Windows Powershell(admin).
 In the Powershell Window Terminal, create new map to x by using net use example below
 
 Just copy and paste the command below to your powershell window
  
 copy and paste the command, then press enter to execute it.
- 
+``` 
 Net use x: \\localhost\mtr
-
+```
 Now let’s do the update by copying the command below and pasting it to your powershell window
  
 copy and paste the command, then press enter to execute it.
-
+```
 Add-AppxPackage  -ForceApplicationShutdown -Path 'x:\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem 'x:\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
- 
+``` 
 
 Once it’s complete reboot the MTR system, it will reboot twice 
 That’s it, you done.
@@ -157,9 +162,9 @@ To boot into Windows connect a Keyboard to the NUC then reboot it while it is co
 Link - <a href="https://www.intel.com/content/www/us/en/support/detect.html"> Intel Support Assistant</a>
 
 #### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a>
-
+```
 Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
-
+```
 #### D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
 #### E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
