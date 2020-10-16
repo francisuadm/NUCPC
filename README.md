@@ -171,11 +171,11 @@ Link - <a href="https://www.intel.com/content/www/us/en/support/detect.html"> In
 ```
 Note - Please ensure ALL instructions for followed when updating the HDMI drivers. Specifically, an HDMI device must be connected to the NUC HDMI port and powered on. These instructions can be found in the extracted driver folder or at this link.
 ```
-#### D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
+##### D. Update the Displaylink device drivers <a href="https://www.displaylink.com/downloads/windows">click HERE to download</a> then select "DisplayLink USB Graphics Software for Windows" Download and install these make sure the Tap is connected and functional as these manage the Tap display.
 
-#### E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
+###### E: Update the Intel NUC BIOS: <a href="https://downloadcenter.intel.com/product/126148/Intel-NUC-Kit-NUC8i5BEH">click HERE to download - Intel-NUC-Kit-NUC8i5BEH</a> 
 
-#### F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
+###### F: Setup a second nightly reboot to ensure the Teams Room is up and ready after any windows/teams updates occurring during the night. As an example, if the Teams nightly reboot is set for 2 or 3 AM, adding one at 7 AM shortly before the office opens should ensure stability. I've also include the steps below to add another reboot task.
 ```
 Press WinKey+R > type taskschd.msc and press Enter (it will launch Task Scheduler)
 Left click from the right pane on the Task Scheduler Library > open Action from the top menu > New Folder... > name it MyTasks > click OK
