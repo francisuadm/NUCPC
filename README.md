@@ -115,7 +115,7 @@ Manually update MTR apps via Powershell command
 See section (Software updates) via Powershell
 https://docs.microsoft.com/en-us/microsoftteams/rooms/rooms-operations
  
-Note the trick is to download the updated MSI from the endpoint itself, while logged in with admin.
+Note the trick is to download the <a href="https://go.microsoft.com/fwlink/?linkid=851168">updated MSI</a> from the endpoint itself, while logged in with admin.
 
 After you download the latest MSI install it, leave it as default location for installation folder. (Microsoft Teams Room App v4.5.35.0)
 Once installation is complete then create new share, follow the instruction below
