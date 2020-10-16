@@ -40,7 +40,7 @@ then click Save and exit.
 
 Install Logitech Sync – Link
 
-Install VNC Viewer - Click HERE URL to download. https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi
+Install VNC Viewer - <a href="https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi">Click HERE URL to download.</a> 
 
 Enable Remote Desktop
 
