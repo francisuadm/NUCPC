@@ -167,9 +167,8 @@ To boot into Windows connect a Keyboard to the NUC then reboot it while it is co
 
 Link - <a href="https://www.intel.com/content/www/us/en/support/detect.html"> Intel Support Assistant</a>
 
-``
-###### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a>
-``
+####### C. Update the NUC HDMI driver: (alleviates Teams related display issues) - <a href="https://downloadcenter.intel.com/download/29472/HDMI-Firmware-Update-Tool-for-NUC8i3BE-NUC8i5BE-NUC8i7BE?v=t">click HERE to download</a>
+
 
 
 ````
