@@ -1,6 +1,6 @@
 # NUCPC
 
-# Here's the step by step instructions
+## Here's the step by step instructions
 
 Brand new unit, let it reboot a few times once it's complete.
 
@@ -37,9 +37,9 @@ Update the Time/Date and Timezone, and use the NTP Server 172.17.32.253 or 132.1
 Select Account make sure you have the correct account and password.
 Under "Supported meeting mode" make sure its set to "Microsoft Teams (default)"
 then click Save and exit.
-
+```
 Install Logitech Sync – <a href="https://download01.logi.com/web/ftp/pub/techsupport/cameras/LogiSyncInstaller_2.0.412.exe">click HERE to download</a>
-
+```
 Install VNC Viewer - <a href="https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi">click HERE to download.</a> 
 
 Enable Remote Desktop
