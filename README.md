@@ -80,11 +80,12 @@ net start bits
 net start dosvc
 ```
 ###### Schedule automatic restart
-~~~schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
-
-``
+```
+schtasks /create /sc daily /tn "Daily auto force reboot" /tr "c:\windows\system32\shutdown.exe /t 0 /r /f" /st 23:59
+```
+```
 shutdown /t 0 /r /f
-``
+```
 FFMPEG command
 Logitech Rally System
 ````
