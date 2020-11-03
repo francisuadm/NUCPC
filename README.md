@@ -189,4 +189,3 @@ In Action section you can choose what you want to run, for example restart your 
 choose Start a program , and press Next in the Program/script field type shutdown /r , and press Next
 And that's all, you can press Finish
 ```
- [ Hello ](hello1)
